@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height: 100vh;
+}
+
+
+/********** reusable **********/
+.row{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+main .nadpis h2{
+    color:black;
+
+    text-align: center;
+
+    font-size: 5vw;
+    cursor: default;
+}
+.nadpis h2:after{
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid rgb(113, 31, 12);
+
+    margin: 20px auto;
+    margin-top: 0;
+
+
+}
+
+
+/********* navigacia ***********/
+
+nav ul{
+    position: absolute;
+    top:2.5%;
+    right: 1%;
+}
+
+nav ul li{
+
+    display: inline-block;
+}
+
+nav ul li a{
+    color:white;
+    background:rgb(43, 99, 135);
+
+    transition: padding 0.5s;
+    padding: 18px 26px 18px 26px;
+    margin: 5px 5px 0px 0px ;
+
+    font-size: 1vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:active{
+
+    transition: padding 0.5s;
+    padding: 18px 36px 28px 36px;
+
+}
+
+/********* website-banner ************/
+
+.banner{
+
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video{
+    position: absolute;
+    top:0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+
+}
+
+
+.banner h1{
+    position: absolute;
+    top:0;
+    left: 0;
+
+    color:rgb(255, 255, 255);
+    background:rgb(54, 34, 34);
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    mix-blend-mode: multiply;
+
+
+    cursor: default;
+}
+
+
+
+/********* hlavy-obsah **********/
+
+main{
+    height: 100vh;
+    background: url(../media/images/thumb-1920-865775.png);
+}
+
+/* pick anime */
+
+.pickanime{
+    display: flex;
+    justify-content: center;
+    
+}
+.result h3{
+    text-align: center;
+    font-size: 50px;
+    border: 5px solid black;
+}
+
+button {
+    padding: 18px 66px 18px 66px;
+    margin-bottom:20px ;
+
+    border-radius: 50px;
+
+    font-weight: 900;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+
+    background: rgb(168, 194, 204);
+}
+
+button:hover,
+button:active {
+    transition: background 1s;
+    background: rgb(108, 154, 172);
+}
+
+
+
+@media only screen and (max-width: 1140px) {
+    .row{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .row{
+        width: 90%;
+    }
+    nav ul{
+        
+        position: relative;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    nav ul li a{
+        transition: padding 2s;
+        font-size: 10px;
+        padding: 8px 16px 8px 16px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:active{
+
+    transition: padding 0.5s;
+    padding: 18px 26px 28px 26px;
+
+}
+.banner h1{
+    font-size: 20vw;
+    text-align: center
+}
+
+main .nadpis h2{
+    color:black;
+
+    text-align: center;
+
+    font-size: 15vw;
+    cursor: default;
+}
+
+
+}
